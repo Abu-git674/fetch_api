@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Api</title>
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+
+  <body>
+    <h2 class="text-center" style="margin-top: 50px">
+      Seach Your Country Name
+    </h2>
+    <div class="container">
+      <form class="col-md-6 m-auto py-5">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            id="search-field"
+            class="form-control"
+            placeholder="Enter a location for Weather Updates"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-danger"
+              type="button"
+              onclick="loadWeatherInfo()"
+              id="button-search"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="loader" id="loadingDiv"></div>
+      <div class="weather-status text-white text-center" id="weatherDiv" </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

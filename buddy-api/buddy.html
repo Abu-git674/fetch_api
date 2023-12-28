@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+      }
+      button {
+        margin-top: 60px;
+        border: 0;
+        padding: 10px 15px;
+        border-radius: 3px;
+        background-color: brown;
+        color: aliceblue;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .main {
+        width: 500px;
+        margin: 30px auto;
+        padding: 30px;
+        background-color: aliceblue;
+        border-radius: 20px;
+        text-align: center;
+    
+      }
+      .main p {
+        font-size: 18px;
+      }
+    </style>
+    <script src="buddy-api.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="loadData()">Load Data</button>
+      <div class="main" id="buddy"></div>
+    </div>
+  </body>
+</html>

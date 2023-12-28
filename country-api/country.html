@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="country-api.js"></script>
+    <style>
+      .container {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      #details {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #details h3 {
+        text-align: center;
+        margin-top: 10px;
+      }
+      #countries {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .country {
+        border: 1px solid goldenrod;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containner">
+      <section id="details">
+        <h2>Country details</h2>
+        <div id="country-details"></div>
+      </section>
+
+      <section id="all_countries">
+        <h2>All Countries</h2>
+        <div id="countries"></div>
+      </section>
+    </div>
+  </body>
+</html>
